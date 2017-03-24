@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="http://localhost:4000/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2017-03-24T15:39:57+01:00</updated><id>http://localhost:4000/</id><title type="html">Napoleon BonaPARTY</title><subtitle></subtitle><entry><title type="html">Zombie Shelter</title><link href="http://localhost:4000/HG/" rel="alternate" type="text/html" title="Zombie Shelter" /><published>2017-03-24T00:00:00+01:00</published><updated>2017-03-24T00:00:00+01:00</updated><id>http://localhost:4000/HG</id><content type="html" xml:base="http://localhost:4000/HG/">&lt;h1 id=&quot;zombie-shelter&quot;&gt;Zombie Shelter&lt;/h1&gt;
+
+&lt;h3 id=&quot;about&quot;&gt;About&lt;/h3&gt;
+
+&lt;p&gt;Zombie Shelter is a project I am currently working on. It’s a first person horror game with next-gen graphics.&lt;/p&gt;
+
+&lt;h3 id=&quot;screenshots&quot;&gt;Screenshots&lt;/h3&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/screenshot005.png&quot; /&gt;
+	&lt;figcaption&gt;Zombies!&lt;/figcaption&gt;
+&lt;/figure&gt;</content><category term="project" /><category term="game" /><category term="horror" /><summary type="html">Best video game in history of video games, maybe ever</summary></entry><entry><title type="html">Funny Shit</title><link href="http://localhost:4000/sample-post-images/" rel="alternate" type="text/html" title="Funny Shit" /><published>2017-03-24T00:00:00+01:00</published><updated>2017-03-24T00:00:00+01:00</updated><id>http://localhost:4000/sample-post-images</id><content type="html" xml:base="http://localhost:4000/sample-post-images/">&lt;p&gt;Here are some funny images I made. Wooo hoooo.&lt;/p&gt;
+
+&lt;h3 id=&quot;pictures&quot;&gt;Pictures&lt;/h3&gt;
+
+&lt;h4 id=&quot;one-funny-picture&quot;&gt;One funny picture&lt;/h4&gt;
+
+&lt;figure&gt;
+	&lt;img src=&quot;/assets/img/elephant.jpg&quot; /&gt;
+	&lt;figcaption&gt;Something funny&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;h4 id=&quot;two-memes&quot;&gt;Two Memes&lt;/h4&gt;
+
+&lt;figure class=&quot;half&quot;&gt;
+    &lt;img style=&quot;opacity: 1&quot; src=&quot;/assets/img/Fat_Cat_With_Steve_Buscemi_Eyes_with_joint_says_something_funny.jpg&quot; /&gt;
+    &lt;img style=&quot;opacity: 1;&quot; src=&quot;/assets/img/orangutrump.jpg&quot; /&gt;
+    &lt;figcaption&gt;Mega memes.&lt;/figcaption&gt;
+&lt;/figure&gt;</content><category term="images" /><category term="funny" /><category term="memes" /><summary type="html">Shit, that will make you laugh</summary></entry></feed>
