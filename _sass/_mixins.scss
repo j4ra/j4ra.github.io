@@ -1,0 +1,48 @@
+// Use media queries like this:
+// @include media-query($on-palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Mixins
+//-------------------------------
+
+@mixin centered-block() {
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 0px;
+}
+
+// Underline slide borders from left/right and back
+// FROM left or right
+@mixin border-slide($direction) {
+    position: relative;
+    border-bottom: 0;
+
+    &:hover, &:focus {
+        border-bottom: 0;
+    }
+
+    &:after {
+        color: inherit;
+        content: '';
+        position: absolute;
+        bottom: -0.15em;
+        #{$direction}: 0;
+        width: 0%;
+        border-bottom: 0.15em solid;
+        transition: width 0.25s ease-in-out;
+    }
+
+    &:hover:after {
+        width: 100%;
+    }
+}

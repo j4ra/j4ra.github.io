@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html>
+    {% include head.html %}
+    <body onload="loadTheme()">
+        {% include header.html %}
+		<script type="text/javascript" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script type="text/javascript" src="{{ '/js/theme_changer.js' | prepend: site.baseurl }}"></script>
+
+        <div class="page-content" id="section-to-print">
+            <div class="wrapper">
+                {{content}}
+            </div>
+        </div>
+        
+        {% include footer.html %}
+        
+    </body>
+</html>

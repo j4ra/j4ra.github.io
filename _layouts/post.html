@@ -1,0 +1,28 @@
+---
+layout: default
+---
+{% assign post = page %}
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+		<div class="post-img" style="background-image: {% if post.color %} linear-gradient({{ post.color }}, {{ post.color }}), {% endif %}url('{% if post.image %}{{ post.image | absolute_url}}{% else %}{{ "/images/basic-tileable.svg" | absolute_url }} {% endif %}');">
+		<div class="post-heading" style="top: 0;">
+			<span class="post-link-title">{{post.title}}</span>
+   
+		    <div class="post-meta">
+			 <time itemprop="datePublished" datetime="{{ post.date | date_to_xmlscheme }}">{{ post.date | date: "%b %-d, %Y" }}</time> 
+			 {% if post.author %} &bull; <span>{{post.author}}</span> {%endif%}
+			 {% for cat in post.categories %}
+			  {% if forloop.first %}&nbsp;&bull;&nbsp;{% endif %}
+			  <a class="post-meta" href="{{ "/category/" | append: cat | downcase | append: "/index.html" | absolute_url }}">#{{ cat }}</a>
+			  {% if forloop.last == false %}
+			   &nbsp;|&nbsp;
+			  {% endif %}
+			 {% endfor %}
+			  </div>
+		    </div>
+		</div>
+  </header>
+  <div class="post-content">
+		{{ content }}
+  </div>
+</article>

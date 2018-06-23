@@ -1,0 +1,66 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+title: JNjn
+email: "jardanejedly(_)seznam.cz"
+description: > # this means to ignore newlines until "baseurl:"
+  &copy; 2018 - Jaroslav Nejedly - inspired by <a href="https://melangue.github.io/dactl//">dactl</a> 
+  - powered by <a href="https://jekyllrb.com/">Jekyll</a><br />
+  Blog (not so) full of interesting stuff. Unity programming guides, tips & tricks. 
+  Various interesting information about physics and math. And&nbsp;many&nbsp;more...
+  
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+author:
+  fullname                  : Jaroslav Nejedly
+  rss                       : true # generate RSS feed and show it's icon in header
+  github                    : j4ra
+
+
+# Gems
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  
+# Permalinks
+permalink                    : posts/:year-:month-:day-:slug
+
+# Pagination
+paginate                     : 5
+paginate_path                : '/page-:num/'
+
+# Build settings
+markdown: kramdown
+
+highlighter: rouge
+
+# More › http://kramdown.gettalong.org/quickref.html
+# Options › http://kramdown.gettalong.org/options.html
+kramdown:
+  input:          GFM
+  # https://github.com/jekyll/jekyll/pull/4090
+  syntax_highlighter: rouge
+  
+# Sass settings
+sass:
+  sass_dir                : _sass
+  style                   : compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+category_dir: category  
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings               : all
+  endings                 : all
+  comments                : ["<!-- ", " -->"]
+  blanklines              : true
+  profile                 : false
+  ignore:
+  envs                    : [local]

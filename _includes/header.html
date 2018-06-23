@@ -1,0 +1,68 @@
+<div class="wrapper">
+<header>
+    <div class="menu">
+        <div class="logo">
+            <a href="{{ '/' | absolute_url }}">{{ site.title }}</a>
+            <object class="logosvg" type="image/svg+xml" data="{{ "/images/logo.svg" | absolute_url }}">Your browser doesn't support svg images</object>    
+        </div>
+        <ul class="page-links">
+            {% for p in site.pages %}
+            {% if p.show %}
+            <li><a href="{{ p.url | absolute_url }}">{{ p.title }}</a></li>
+            {% endif %}
+            {% endfor %}
+        </ul>
+    </div>
+    <div class="social">
+        <ul>
+            {% if site.author.youtube %}
+            <li>
+                <a href="https://youtube.com/{{ site.author.youtube }}" target="_blank" class="smaller">
+                    <span class="icon-youtube"></span>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.stackoverflow %}
+            <li>
+                <a href="https://stackoverflow.com/{{ site.author.stackoverflow }}" target="_blank" class="smaller">
+                    <span class="icon-stackoverflow"></span>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.twitter %}
+            <li>
+                <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" class="smaller">
+                    <span class="icon-twitter"></span>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.github %}
+            <li>
+                <a href="https://github.com/{{ site.author.github }}" target="_blank" class="smaller">
+                    <span class="icon-github"></span>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.mail %}
+            <li>
+                <a href="mailto:{{ site.author.mail }}" target="_blank">
+                    <span class="icon-mail_outline"></span>
+                </a>
+            </li>
+            {% endif %}
+            {% if site.author.rss == true %}
+            <li>
+                <a href="{{ '/feed.xml' | prepend: site.baseurl }}" target="_blank">
+                    <span class="icon-rss_feed"></span>
+                </a>
+            </li>
+            {% endif %}
+            <li>
+                <a href="#" class="icon" id="theme_button" title="Switch theme?">
+                    <span class="icon icon-invert_colors"></span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</header>
+</div>

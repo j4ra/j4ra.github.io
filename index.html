@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<div class="home">
+  <ul class="post-list">
+    {% for post in paginator.posts %}
+	  <li>
+	    {% include post-link.html content=post%}
+	  </li>
+	  {% if forloop.last == false %}
+	  <hr />
+	  {% endif %}
+	{% endfor %}
+  </ul>
+
+  {% include pagination.html %}
+
+</div>

@@ -1,0 +1,93 @@
+body {
+    color: $text-color;
+    background-color: $background-color;
+}
+
+a {
+    color: $main-color;
+    transition: color 0.5s;
+    &:visited{
+        color: $main-color;
+    }
+    &:hover{
+        color: $inverse-color;
+    }
+}
+
+blockquote {
+    color: $grey-color;
+    border-left: 4px solid $grey-color-light;
+}
+
+.post-meta {
+    color: $grey-color-light;
+}
+
+a.post-meta {
+    color: $main-color-light;
+	text-shadow: 1px 1px #000;
+	transition: text-shadow 0.5s;
+    &:visited {
+        color: $main-color-light;
+    }
+    &:hover {
+        color: $inverse-color;
+		text-shadow: none;
+    }
+}
+
+/**
+ * Icons
+ */
+.icon {
+
+    > svg {
+        display: inline-block;
+        width: 1em;
+        height: 1em;
+        vertical-align: middle;
+
+        path {
+            fill: $grey-color;
+        }
+    }
+}
+
+.post-excerpt:after {
+    background: linear-gradient(transparent 2em, $background-color );
+}
+
+hr {
+    border: 0.1em solid $grey-color;
+}
+
+pre, code {
+    border: 1px solid $grey-color-light;
+    background-color: $code-background-color;
+}
+
+.post-link-title {
+    color: $grey-color-light;
+}
+a.post-link-title {
+    color: $main-color;
+    transition: color 0.5s;
+
+    &:visited {
+        color: $main-color;
+    }
+
+    &:hover {
+        color: $inverse-color;
+    }
+}
+
+.page-footer{
+    color: $light-text-color;
+}
+
+.logosvg {
+    -webkit-filter: invert($logo-color);
+    filter: invert($logo-color);
+    -moz-filter: invert($logo-color);
+}

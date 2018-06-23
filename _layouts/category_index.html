@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<header class="post-header">
+		<span class="page-title">#{{page.category}}</span>
+</header>
+<div class="home">
+  <ul class="post-list">
+    {% for post in site.categories[page.category] %}
+	  <li>
+	    {% include post-link.html content=post%}
+	  </li>
+	  {% if forloop.last == false %}
+	  <hr />
+	  {% endif %}
+	{% endfor %}
+  </ul>
+</div>

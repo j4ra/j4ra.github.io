@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="256" height="256" version="1.1" viewBox="0 0 67.733 67.733" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g transform="translate(0 -229.27)">
+  <use transform="translate(67.733 67.733)" xlink:href="#g839"/>
+  <use xlink:href="#g839"/>
+  <use transform="translate(0 67.733)" xlink:href="#g839"/>
+  <use transform="translate(0 135.47)" xlink:href="#g839"/>
+  <use transform="translate(67.733)" xlink:href="#g839"/>
+  <use transform="translate(67.733 135.47)" xlink:href="#g839"/>
+  <use transform="translate(135.47)" xlink:href="#g839"/>
+  <use transform="translate(135.47 67.733)" xlink:href="#g839"/>
+  <use transform="translate(135.47 135.47)" xlink:href="#g839"/>
+  <g id="g839">
+   <rect x="-67.733" y="161.53" width="67.733" height="67.733" fill="#ccc" stroke-width=".26458"/>
+   <path transform="matrix(.78982 -.15641 .17934 .68884 -54.799 38.433)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="2.7984"/>
+   <path transform="matrix(.40426 -.080057 .091792 .35258 -60.191 131.36)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="5.4673"/>
+   <path transform="matrix(.69361 -.13736 .15749 .60494 -36.039 81.68)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="3.1866"/>
+   <path transform="matrix(.51877 -.10273 .11779 .45244 -20.288 134.22)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="4.2606"/>
+   <path transform="matrix(.61876 -.12253 .1405 .53965 -18.818 73.774)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="3.5721"/>
+   <path transform="matrix(.48166 -.095384 .10937 .42008 -54.3 135.54)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="4.5888"/>
+   <path transform="matrix(.30675 -.060746 .06965 .26753 -4.3442 159.66)" d="m-18.975 213.9-20.064 6.3749-15.553-14.189 4.5113-20.564 20.064-6.3749 15.553 14.189z" fill="none" stroke="#000" stroke-width="7.2054"/>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,273 @@
+.post-img {
+    height: $image-height;
+    background-repeat: repeat;
+    background-position: 115px 523px;
+    margin-bottom: 1em;
+    visibility: visible;
+
+    @media only print {
+        height: 7em;
+    }
+}
+
+.post-heading {
+    position: relative;
+    top: -$image-height;
+    padding-top: $image-height / 2 - $base-font-size * 4.2;
+    display: block;
+    text-align: center;
+
+    @media only print {
+        top: 0em;
+        padding-top: 0;
+    }
+}
+
+.post-link-title {
+    font-size: $base-font-size * 3;
+    padding-left: 0.2em;
+    padding-right: 0.2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-weight: 900;
+
+    @include media-query($on-palm) {
+        font-size: $palm-font-size * 3;
+    }
+}
+
+a.post-link-title {
+    @include border-slide(left)
+}
+
+.post-meta {
+    font-weight: 500;
+    font-size: $base-font-size * 1.2;
+
+    @include media-query($on-palm) {
+        font-size: $palm-font-size * 1.2;
+    }
+}
+
+.post-img > .overlay {
+    opacity: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    transition: opacity 0.5s;
+}
+
+.post-img:hover > .overlay {
+    opacity: 0.5;
+}
+
+.post-excerpt {
+    position: relative;
+}
+
+.post-excerpt:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.post-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.post-link {
+}
+
+.post-header {
+    padding-bottom: $spacing-unit;
+    text-align: center;
+}
+
+.page-title {
+    font-size: $base-font-size * 3;
+    font-weight: 800;
+    @include media-query($on-palm) {
+        font-size: $palm-font-size * 3;
+    }
+}
+
+.readmore {
+    font-size: $base-font-size * 1.5;
+    text-align: right;
+    font-weight: 600;
+
+    @include media-query($on-palm) {
+        font-size: $palm-font-size * 1.5;
+    }
+}
+
+.readmore > a {
+    @include border-slide(left)
+}
+
+.pagination {
+    position: relative;
+    top: -1em;
+    max-width: 30%;
+    padding-bottom: 4em;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include media-query($on-palm) {
+        max-width: 50%;
+    }
+}
+
+.pagination-item-prev {
+    float: left;    
+    text-align: left;
+    font-size: $base-font-size * 1.5;
+
+}
+.pagination-item-next {
+    float: right;
+    text-align: right;
+    font-size: $base-font-size * 1.5;
+}
+
+.page-footer {
+    margin: 4em;
+    text-align: center;
+    font-size: $base-font-size * 0.875;
+
+    @include media-query($on-palm) {
+        font-size: $palm-font-size * 0.875;
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+}
+
+header {
+    overflow: hidden;
+    margin-bottom: 2rem;
+}
+
+.logo {
+    font-size: 3.5rem;
+    font-weight: 800;
+
+    .logosvg {
+        height: 2.7rem;
+    }
+	
+	a {
+	@include border-slide(left);
+	}
+}
+
+.menu {
+    float: left;
+
+    ul {
+        list-style-type: none;
+        margin-bottom: 0rem;
+        padding: 0rem;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: 0px;
+        }
+
+        a {
+            font-size: $base-font-size;
+            font-weight: $base-font-weight;
+            display: block;
+            height: 2rem; // reset
+            .smaller {
+                font-size: 0.85em;
+            }
+        }
+    }
+}
+
+// Social icons
+.social {
+    float: right;
+    margin-top: 1.75rem;
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        display: inline-block;
+    }
+
+    li a {
+        display: block;
+        text-align: center;
+        font-size: 1.5rem;
+        width: 2.5rem;
+        // ugly fix needed for theme switcher icon
+        &:focus {
+            border: none;
+
+            &:focus:hover {
+                border-bottom: 0.15em solid;
+            }
+        }
+    }
+}
+
+@include media-query($on-palm) {
+    header {
+        margin-bottom: 4rem;
+    }
+
+    .menu,
+    .social {
+        @include centered-block();
+    }
+    // fake it till you make it
+    .logo {
+        margin-top: 5rem;
+
+        .logosvg {
+            display: block;
+            margin: -8rem auto 5rem auto;
+            height: 3rem;
+        }
+    }
+}
+
+.wrapper {
+    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+    @extend %clearfix;
+
+    @include media-query($on-laptop) {
+        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
+        max-width: calc(#{$content-width} - (#{$spacing-unit}));
+        padding-right: $spacing-unit / 2;
+        padding-left: $spacing-unit / 2;
+    }
+}
+
+%clearfix {
+
+    &:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
