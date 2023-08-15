@@ -191,6 +191,7 @@ header {
             font-weight: $base-font-weight;
             display: block;
             height: 2rem; // reset
+	    margin-top: 5px; //px because the size of the margin is not dependent on the font size of this element but it depends on the font size of the title - we need to move the menu page link down as the underscore of the title link (when hovered) interferes with it.
             .smaller {
                 font-size: 0.85em;
             }
