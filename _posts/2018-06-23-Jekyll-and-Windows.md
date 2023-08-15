@@ -94,7 +94,7 @@ function loadTheme() {
 
 {% endhighlight %}
 
-This script will change the href of our stylesheet reference and also store it inside browser. Just add `onclick="changeTheme()"` into some button and `onclick="loadTheme()"` into <body> tag. 
+This script will change the href of our stylesheet reference and also store it inside browser. Just add `onclick="changeTheme()"` into some button and `oncload="loadTheme()"` into <body> tag. 
 
 If the last part confused you, you can always look inside my github repo of this blog or even fork it.
 
