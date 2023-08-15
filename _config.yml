@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
   Various interesting information about physics and math. And&nbsp;many&nbsp;more...
   
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://j4ra.github.io" # the base hostname & protocol for your site
+url: "https://blog.j4ra.com" # the base hostname & protocol for your site
 
 author:
   fullname                  : Jaroslav Nejedly
